@@ -1,0 +1,19 @@
+header 
+.nav-link {
+    color: #6e3086;
+    transition: color 0.3s ease; 
+}
+header 
+.nav-link:hover {
+    color: #F9D71C; ;
+}
+.promo-banner {
+    background-color: #6e3086;
+    padding: 40px 20px;
+    text-align: center;
+    color: white;
+}
+.cabecera {
+    background-color: #6e3086;
+    color: white;
+}
