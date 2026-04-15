@@ -1,19 +1,95 @@
-header 
-.nav-link {
-    color: #6e3086;
+
+:root {
+    --purple-fanny: #6e3086;
+    --yellow-fanny: #F9D71C;
+}
+
+header .nav-link, 
+.footer-reposteria .nav-link {
+    color: var(--purple-fanny);
     transition: color 0.3s ease; 
 }
-header 
-.nav-link:hover {
-    color: #F9D71C; ;
+
+header .nav-link:hover, 
+.footer-reposteria .nav-link:hover {
+    color: var(--yellow-fanny);
+}
+
+
+.cabecera {
+    background-color: var(--purple-fanny);
+    color: white;
+    width: 100%; 
+}
+
+.productos-container {
+    background-color: var(--yellow-fanny);
+    padding: 2rem 0;
 }
 .promo-banner {
-    background-color: #6e3086;
-    padding: 40px 20px;
-    text-align: center;
+    background-color: var(--purple-fanny);
     color: white;
+    width: 100%; 
 }
-.cabecera {
-    background-color: #6e3086;
-    color: white;
+
+.card-img-wrapper {
+    height: 220px;
+    overflow: hidden;
+    background-color: #f8f9fa;
+}
+
+.card-img-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    transition: transform 0.3s ease;
+}
+.custom-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.custom-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+}
+
+.custom-card:hover .card-img-wrapper img {
+    transform: scale(1.05);
+}
+
+.brand-label {
+    font-size: 0.75rem;
+    letter-spacing: 1px;
+    color: #6c757d;
+}
+
+.price-tag {
+    font-size: 1.5rem;
+    color: #212529;
+}
+
+.cards-produtcos{
+    border: 2px solid var(--purple-fanny);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.footer-reposteria {
+    background-color: white;
+    width: 100%;
+    margin-top: 3rem;
+}
+
+.footer-title {
+    color: var(--purple-fanny);
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.footer-reposteria p {
+    color: var(--purple-fanny);
+}
+
+.border-purple {
+    border: 2px solid var(--purple-fanny) 
 }
